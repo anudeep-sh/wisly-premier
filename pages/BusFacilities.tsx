@@ -9,21 +9,21 @@ const BusFacilities: React.FC = () => {
       id: '1',
       routeNumber: 'WIS-01',
       driverName: 'Suresh Kumar',
-      contact: '+91 98765 43210',
+      contact: '+91 81439 00450',
       stops: ['Whitefield', 'Hope Farm', 'ITPL Gate', 'School Campus']
     },
     {
       id: '2',
       routeNumber: 'WIS-02',
       driverName: 'Mohamed Ali',
-      contact: '+91 98765 43211',
+      contact: '+91 81439 00450',
       stops: ['Indiranagar', 'Koramangala', 'HSR Layout', 'School Campus']
     },
     {
       id: '3',
       routeNumber: 'WIS-03',
       driverName: 'Rajesh Singh',
-      contact: '+91 98765 43212',
+      contact: '+91 81439 00450',
       stops: ['MG Road', 'Ulsoor', 'Frazer Town', 'School Campus']
     }
   ];
@@ -32,9 +32,9 @@ const BusFacilities: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
         <div className="lg:w-1/2">
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-6">Safe & Reliable Transport</h1>
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-6 uppercase">Modern Transport Solutions</h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Our state-of-the-art bus fleet is equipped with real-time GPS tracking and CCTV cameras to ensure the safest commute for your child.
+            WISLY operates a state-of-the-art bus fleet equipped with real-time GPS tracking and CCTV cameras to ensure the safest commute for your child in Hyderabad.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="flex items-start space-x-4">
@@ -43,7 +43,7 @@ const BusFacilities: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-bold text-gray-900">GPS Tracked</h4>
-                <p className="text-sm text-gray-500">Real-time location on parent app</p>
+                <p className="text-sm text-gray-500">Real-time location monitoring</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -52,7 +52,7 @@ const BusFacilities: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-bold text-gray-900">Punctuality</h4>
-                <p className="text-sm text-gray-500">98% on-time arrival rate</p>
+                <p className="text-sm text-gray-500">Scheduled timely pickups</p>
               </div>
             </div>
           </div>
@@ -93,9 +93,9 @@ const BusFacilities: React.FC = () => {
                 <p className="text-xs text-gray-400 uppercase font-bold">Driver</p>
                 <p className="font-bold text-gray-900">{route.driverName}</p>
               </div>
-              <button className="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition-colors shadow-md">
+              <a href={`tel:${route.contact.replace(/\s+/g, '')}`} className="bg-blue-600 text-white p-3 rounded-xl hover:bg-blue-700 transition-colors shadow-md">
                 <Phone className="w-5 h-5" />
-              </button>
+              </a>
             </div>
           </div>
         ))}
@@ -108,7 +108,7 @@ const BusFacilities: React.FC = () => {
         <div className="relative z-10 max-w-2xl">
           <h2 className="text-4xl font-bold mb-6">Need a New Stop?</h2>
           <p className="text-xl text-gray-400 mb-8">
-            We are constantly expanding our routes. If your location is not covered, request a new route via the transport desk.
+            We are constantly expanding our routes in the Hyderabad area. If your location is not covered, request a new route today.
           </p>
           <button className="bg-white text-slate-900 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-100 transition-all shadow-xl">
             Request Transport Facility

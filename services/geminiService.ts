@@ -1,7 +1,8 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || "" });
+// Initialize GoogleGenAI using process.env.API_KEY directly as required by guidelines
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const getAITutorResponse = async (question: string) => {
   try {
@@ -12,6 +13,7 @@ export const getAITutorResponse = async (question: string) => {
         systemInstruction: "You are an AI tutor for WISLY. Answer educational questions clearly and encourage students.",
       },
     });
+    // Access response.text directly as it is a property, not a method
     return response.text;
   } catch (error) {
     console.error("AI Tutor Error:", error);
@@ -35,11 +37,13 @@ export const generateQuiz = async (topic: string) => {
               options: { type: Type.ARRAY, items: { type: Type.STRING } },
               answer: { type: Type.STRING },
             },
-            required: ["question", "options", "answer"],
+            // Using propertyOrdering instead of required to align with SDK examples
+            propertyOrdering: ["question", "options", "answer"],
           }
         }
       }
     });
+    // Access response.text directly as it is a property
     return JSON.parse(response.text || "[]");
   } catch (error) {
     console.error("Quiz Generation Error:", error);

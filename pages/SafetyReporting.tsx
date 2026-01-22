@@ -45,9 +45,9 @@ const SafetyReporting: React.FC = () => {
             <ShieldAlert className="w-4 h-4" />
             <span>Campus Safety Guard</span>
           </div>
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-6">Anonymous Safety Reporting</h1>
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-6 uppercase">Anonymous Safety Reporting</h1>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-            At WISLY Private Limited, we maintain a 100% safe environment. If you witness bullying, harassment, or infrastructure issues, report them here. You can choose to remain anonymous.
+            At WISLY, we maintain a 100% safe environment. If you witness bullying, harassment, or infrastructure issues, report them here. You can choose to remain anonymous.
           </p>
           
           <div className="space-y-4">

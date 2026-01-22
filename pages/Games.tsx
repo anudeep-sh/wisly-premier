@@ -51,6 +51,12 @@ const Games: React.FC = () => {
     setLoading(false);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter') {
+      askAI();
+    }
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -136,7 +142,7 @@ const Games: React.FC = () => {
             {aiAnswer ? (
               <div className="space-y-4">
                 <div className="flex justify-start">
-                   <div className="bg-slate-700 p-4 rounded-2xl rounded-tl-none max-w-[85%] text-sm leading-relaxed">
+                   <div className="bg-slate-700 p-4 rounded-2xl rounded-tl-none max-w-[85%] text-sm leading-relaxed whitespace-pre-wrap">
                     {aiAnswer}
                    </div>
                 </div>
@@ -155,7 +161,7 @@ const Games: React.FC = () => {
               className="w-full bg-slate-800 border-none px-6 py-4 rounded-2xl text-white focus:ring-2 focus:ring-blue-500 outline-none pr-16"
               value={aiQuestion}
               onChange={(e) => setAIQuestion(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && askAI()}
+              onKeyDown={handleKeyDown}
             />
             <button
               onClick={askAI}

@@ -3,22 +3,19 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
   Shield, 
-  Book, 
-  AlertTriangle, 
-  FileText, 
   Smartphone, 
   Users, 
   Lock, 
   RefreshCcw, 
   Scale,
-  ChevronRight
+  ChevronRight,
+  AlertTriangle
 } from 'lucide-react';
 
 const Policies: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'safety' | 'privacy' | 'refund' | 'terms'>('safety');
   const location = useLocation();
 
-  // Basic deep linking logic if needed in the future
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const tab = params.get('tab') as any;
@@ -35,16 +32,15 @@ const Policies: React.FC = () => {
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen pb-20">
+    <div className="bg-slate-50 min-h-screen pb-20 pt-16">
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">WISLY Legal & Safety Hub</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 uppercase">WISLY Legal Hub</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ensuring a transparent, secure, and disciplined environment for WISLY Private Limited's 3,000+ students.
+            Ensuring a transparent, secure, and disciplined environment for WISLY's 3,000+ students.
           </p>
         </div>
         
-        {/* Tab Navigation */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex overflow-x-auto no-scrollbar space-x-2 pb-0">
             {tabs.map((tab) => (
@@ -74,7 +70,7 @@ const Policies: React.FC = () => {
                 Digital & Cyber Safety
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-6">
-                In the digital age, WISLY maintains the strictest cyber protocols in India. Our "Cyber Guard" system utilizes AI to monitor on-campus network traffic for any signs of predatory behavior or cyberbullying.
+                At WISLY, we maintain the strictest cyber protocols. Our "Cyber Guard" system utilizes AI to monitor on-campus network traffic for any signs of predatory behavior or cyberbullying.
               </p>
               <ul className="space-y-4">
                 {['Unauthorized recording of faculty or peers is strictly prohibited.', 
@@ -94,7 +90,7 @@ const Policies: React.FC = () => {
                 Anti-Ragging Compliance
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-6">
-                Ragging is a criminal offense. WISLY Private Limited adheres to the Supreme Court of India guidelines. Our campus is a 100% ragging-free zone.
+                Ragging is a criminal offense. WISLY adheres to the Supreme Court of India guidelines. Our campus is a 100% ragging-free zone.
               </p>
               <div className="bg-red-50 p-6 rounded-2xl border border-red-100">
                 <p className="text-red-700 font-medium italic text-sm">
@@ -115,19 +111,19 @@ const Policies: React.FC = () => {
               <p>Last Updated: October 2024</p>
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">1. Information We Collect</h3>
-                <p>We collect personal identifiers including student name, date of birth, guardian details, Aadhaar number (optional), and academic history. We also collect digital data like login times and classroom interactions.</p>
+                <p>We collect personal identifiers including student name, date of birth, guardian details, and academic history.</p>
               </section>
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">2. How We Use Data</h3>
-                <p>Data is used exclusively for educational progress tracking, attendance monitoring, and automated communication with parents via WhatsApp and SMS.</p>
+                <p>Data is used exclusively for educational progress tracking, attendance monitoring, and automated communication with parents via our systems.</p>
               </section>
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">3. Data Security</h3>
-                <p>All student information is stored on secure, encrypted Indian servers. WISLY Private Limited employs bank-grade 256-bit encryption for all database transactions.</p>
+                <p>All student information is stored on secure, encrypted servers. WISLY employs bank-grade 256-bit encryption for all database transactions.</p>
               </section>
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">4. Third-Party Sharing</h3>
-                <p>We do not sell student data. Information is only shared with authorized educational boards or in compliance with Indian legal requirements.</p>
+                <p>We do not sell student data. Information is only shared with authorized educational boards or in compliance with legal requirements.</p>
               </section>
             </div>
           </div>
@@ -146,15 +142,11 @@ const Policies: React.FC = () => {
               </div>
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">1. Admission Fees</h3>
-                <p>Admission fees are non-refundable once the enrollment process is completed and the student has been allocated a roll number.</p>
+                <p>Admission fees are non-refundable once the enrollment process is completed and the student has been allocated a student ID.</p>
               </section>
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">2. Tuition & Term Fees</h3>
-                <p>Tuition fees paid for a specific term are generally non-refundable. However, in extreme cases of medical emergency or relocation, a pro-rated credit may be applied to the next academic session at the management's discretion.</p>
-              </section>
-              <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">3. Transport & Bus Fees</h3>
-                <p>Bus fees are charged on a quarterly basis and are non-refundable once the quarter has commenced.</p>
+                <p>Tuition fees paid for a specific term are generally non-refundable. Pro-rated credit may be applied in extreme cases at the management's discretion.</p>
               </section>
             </div>
           </div>
@@ -169,19 +161,15 @@ const Policies: React.FC = () => {
             <div className="prose prose-blue max-w-none text-gray-600 space-y-6">
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">1. Attendance Requirement</h3>
-                <p>A minimum of 75% attendance is mandatory for a student to be eligible to appear for the final examinations, as per CBSE/State Board guidelines.</p>
+                <p>A minimum of 75% attendance is mandatory for a student to be eligible to appear for the final examinations.</p>
               </section>
               <section>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">2. Disciplinary Code</h3>
-                <p>Students must adhere to the WISLY Code of Honor. Habitual late-coming, usage of banned substances, or damage to school property will result in disciplinary action or expulsion.</p>
+                <p>Students must adhere to the WISLY Code of Conduct. Habitual late-coming or damage to school property will result in disciplinary action.</p>
               </section>
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">3. Bus Transport Liability</h3>
-                <p>While we maintain the highest safety standards, WISLY Private Limited is not liable for delays caused by traffic, weather conditions, or unforeseen vehicle breakdowns beyond our control.</p>
-              </section>
-              <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">4. Intellectual Property</h3>
-                <p>All curriculum material, recorded lectures, and software provided by WISLY are the intellectual property of WISLY Private Limited and cannot be shared or reproduced.</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">3. Intellectual Property</h3>
+                <p>All curriculum material and software provided by WISLY are the intellectual property of WISLY.</p>
               </section>
             </div>
           </div>
@@ -196,7 +184,7 @@ const Policies: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/safety" className="px-8 py-3 bg-white text-slate-900 rounded-xl font-bold hover:bg-gray-100 transition-colors">Safety Portal</Link>
-            <a href="mailto:legal@wisly.com" className="px-8 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors">Contact Legal Team</a>
+            <a href="mailto:support@thequickpayme.com" className="px-8 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors">Contact Support Team</a>
           </div>
         </div>
       </div>

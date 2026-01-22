@@ -1,7 +1,7 @@
 
 {
   "name": "WISLY - Premier Education Portal",
-  "description": "A comprehensive educational platform for WISLY Private Limited, featuring student management, fee payments, detailed subject classrooms, bus facilities, and interactive learning games.",
+  "description": "A comprehensive educational platform for WISLY India Private Limited, featuring student management, fee payments, detailed subject classrooms, bus facilities, and interactive learning games.",
   "requestFramePermissions": [
     "camera",
     "microphone"
