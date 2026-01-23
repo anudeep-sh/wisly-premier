@@ -209,7 +209,7 @@ const Policies: React.FC = () => {
             <div className="space-y-8 prose prose-lg prose-slate max-w-none text-gray-500 font-medium leading-relaxed">
               <section>
                 <h3 className="text-xl font-black text-gray-900 mb-4">1. Academic Obligations</h3>
-                <p>By enrolling at WISLY, students agree to maintain a minimum of 75% attendance and adhere to the academic code of conduct. Failure to do so may result in debarment from terminal examinations.</p>
+                <p>By enrolling at NEOFIN NEX India Private Limited, students agree to maintain a minimum of 75% attendance and adhere to the academic code of conduct. Failure to do so may result in debarment from terminal examinations.</p>
               </section>
               <section>
                 <h3 className="text-xl font-black text-gray-900 mb-4">2. Intellectual Property</h3>
