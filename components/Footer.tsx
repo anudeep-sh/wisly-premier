@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-100 mt-20 pt-10 flex flex-col md:flex-row justify-between items-center text-gray-400 font-bold text-sm">
-          <p>&copy; {new Date().getFullYear()} WISLY. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} NEOFIN NEX India Private Limited. All rights reserved.</p>
           <p className="mt-4 md:mt-0 flex items-center">
             Made with <Heart className="w-4 h-4 mx-2 text-red-500 fill-red-500" /> in Hyderabad
           </p>
