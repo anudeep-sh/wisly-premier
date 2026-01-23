@@ -133,7 +133,7 @@ const Policies: React.FC = () => {
               <section className="relative pl-12">
                 <div className="absolute left-0 top-0 w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center font-black">1</div>
                 <h3 className="text-xl font-black text-gray-900 mb-4">Nature of Data Collection</h3>
-                <p className="text-gray-500 font-medium leading-relaxed">We collect student demographic data, academic performance metrics, attendance logs, and guardian contact details for the sole purpose of educational administration.</p>
+                <p className="text-gray-500 font-medium leading-relaxed">NEOFIN NEX India Private Limited collect student demographic data, academic performance metrics, attendance logs, and guardian contact details for the sole purpose of educational administration.</p>
               </section>
               <section className="relative pl-12">
                 <div className="absolute left-0 top-0 w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center font-black">2</div>
