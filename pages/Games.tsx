@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Gamepad2, Brain, Sparkles, Send, Loader2 } from 'lucide-react';
-import { generateQuiz, getAITutorResponse } from '../services/geminiService';
+// import { generateQuiz, getAITutorResponse } from '../services/geminiService';
 
 interface Question {
   question: string;
@@ -16,19 +16,19 @@ const Games: React.FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [gameState, setGameState] = useState<'idle' | 'playing' | 'result'>('idle');
-  const [aiQuestion, setAIQuestion] = useState('');
-  const [aiAnswer, setAIAnswer] = useState('');
+  // const [aiQuestion, setAIQuestion] = useState('');
+  // const [aiAnswer, setAIAnswer] = useState('');
 
   const startQuiz = async () => {
     if (!topic) return;
     setLoading(true);
-    const data = await generateQuiz(topic);
-    if (data.length > 0) {
-      setQuiz(data);
-      setGameState('playing');
-      setScore(0);
-      setCurrentQuestion(0);
-    }
+    // const data = await generateQuiz(topic);
+    // if (data.length > 0) {
+    //   setQuiz(data);
+    //   setGameState('playing');
+    //   setScore(0);
+    //   setCurrentQuestion(0);
+    // }
     setLoading(false);
   };
 
@@ -43,19 +43,19 @@ const Games: React.FC = () => {
     }
   };
 
-  const askAI = async () => {
-    if (!aiQuestion) return;
-    setLoading(true);
-    const res = await getAITutorResponse(aiQuestion);
-    setAIAnswer(res || "Try again.");
-    setLoading(false);
-  };
+  // const askAI = async () => {
+  //   if (!aiQuestion) return;
+  //   setLoading(true);
+  //   const res = await getAITutorResponse(aiQuestion);
+  //   setAIAnswer(res || "Try again.");
+  //   setLoading(false);
+  // };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      askAI();
-    }
-  };
+  // const handleKeyDown = (e: React.KeyboardEvent) => {
+  //   if (e.key === 'Enter') {
+  //     askAI();
+  //   }
+  // };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -131,8 +131,8 @@ const Games: React.FC = () => {
           )}
         </div>
 
-        {/* AI Tutor */}
-        <div className="bg-slate-900 rounded-[3rem] p-10 shadow-xl text-white flex flex-col h-full">
+        {/* AI Tutor - Commented Out */}
+        {/* <div className="bg-slate-900 rounded-[3rem] p-10 shadow-xl text-white flex flex-col h-full">
           <h2 className="text-3xl font-extrabold mb-8 flex items-center">
             <Sparkles className="w-8 h-8 mr-3 text-blue-400" />
             WISLY AI Tutor
@@ -171,7 +171,7 @@ const Games: React.FC = () => {
               {loading ? <Loader2 className="animate-spin w-5 h-5" /> : <Send className="w-5 h-5" />}
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

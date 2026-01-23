@@ -11,17 +11,16 @@ export default defineConfig(({ mode }) => {
       },
       plugins: [react()],
       define: {
-        'import.meta.env.VITE_GEMINI_API_KEY': JSON.stringify(env.VITE_GEMINI_API_KEY),
+        // 'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+        // 'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+        global: 'globalThis'
       },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
+          'crypto': 'node-stdlib-browser/crypto',
+          'buffer': 'node-stdlib-browser/buffer'
         }
-      },
-      build: {
-        outDir: 'dist',
-        sourcemap: false,
-        minify: 'terser'
       }
     };
 });
