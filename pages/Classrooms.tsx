@@ -25,12 +25,12 @@ const Classrooms: React.FC = () => {
         name: 'Mrs. Emily Parker',
         subject: 'English Literature',
         qualification: 'M.A., B.Ed',
-        image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400&h=400'
+        image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop'
       },
       subjectDetails: {
-        bannerImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1200&auto=format&fit=crop',
+        bannerImage: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200&auto=format&fit=crop',
         description: "Focuses on developing critical thinking through classical literature and advanced linguistics.",
-        topics: ["Shakespearean Drama", "Poetic Analysis", "Persuasive Writing", "Grammar & Syntax"],
+        topics: ["Modern Drama", "Poetic Analysis", "Creative Writing", "Linguistics"],
         icon: Globe,
         color: "bg-blue-600"
       }
@@ -45,12 +45,12 @@ const Classrooms: React.FC = () => {
         name: 'Mr. David Miller',
         subject: 'Mathematics',
         qualification: 'M.Sc, Mathematics',
-        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400'
+        image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop'
       },
       subjectDetails: {
         bannerImage: 'https://images.unsplash.com/photo-1509228468518-180dd48219d8?q=80&w=1200&auto=format&fit=crop',
         description: "A deep dive into logic, spatial reasoning, and the fundamental language of the universe.",
-        topics: ["Trigonometric Ratios", "Polynomial Equations", "Differential Calculus", "Probability Theory"],
+        topics: ["Geometry", "Calculus", "Probability", "Logic"],
         icon: Layout,
         color: "bg-indigo-600"
       }
@@ -65,12 +65,12 @@ const Classrooms: React.FC = () => {
         name: 'Dr. Anita Roy',
         subject: 'Physics',
         qualification: 'Ph.D, Physics',
-        image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400'
+        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop'
       },
       subjectDetails: {
-        bannerImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
+        bannerImage: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1200&auto=format&fit=crop',
         description: "Exploring the fundamental laws of nature, energy, and mechanical systems.",
-        topics: ["Quantum Mechanics Intro", "Electromagnetism", "Optics & Photonics", "Thermodynamics"],
+        topics: ["Mechanics", "Electromagnetism", "Optics", "Thermodynamics"],
         icon: Smartphone,
         color: "bg-teal-600"
       }
@@ -86,7 +86,7 @@ const Classrooms: React.FC = () => {
           </div>
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-8 uppercase tracking-tight">Academic <span className="text-blue-600">Core.</span></h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto font-medium">
-            Explore our curated subject modules designed by the expert faculty at WISLY.
+            Explore our curated subject modules designed by the expert faculty at egurukl.
           </p>
         </div>
 

@@ -1,22 +1,84 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="vibrant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WISLY | Empowering Minds</title>
+    <title>egurukl | Empowering Minds</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --primary: #dc2626; /* Red 600 */
+        --primary-hover: #b91c1c;
+        --secondary: #2563eb; /* Blue 600 */
+        --secondary-hover: #1d4ed8;
+        --accent: #f87171;
+        --surface: #ffffff;
+        --bg: #f8fafc;
+      }
+
+      [data-theme='royal'] {
+        --primary: #1e3a8a; /* Navy 900 */
+        --primary-hover: #1e40af;
+        --secondary: #b45309; /* Amber 700 */
+        --secondary-hover: #92400e;
+        --accent: #fbbf24;
+        --surface: #ffffff;
+        --bg: #fcfaf2;
+      }
+
+      [data-theme='cyber'] {
+        --primary: #06b6d4; /* Cyan 500 */
+        --primary-hover: #0891b2;
+        --secondary: #8b5cf6; /* Violet 500 */
+        --secondary-hover: #7c3aed;
+        --accent: #f472b6;
+        --surface: #0f172a;
+        --bg: #020617;
+      }
+
+      [data-theme='forest'] {
+        --primary: #059669; /* Emerald 600 */
+        --primary-hover: #047857;
+        --secondary: #475569; /* Slate 600 */
+        --secondary-hover: #334155;
+        --accent: #10b981;
+        --surface: #ffffff;
+        --bg: #f0fdf4;
+      }
+
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #f8fafc;
+        background-color: var(--bg);
+        color: #1e293b;
+        transition: background-color 0.5s ease, color 0.5s ease;
       }
+
+      [data-theme='cyber'] body {
+        color: #f1f5f9;
+      }
+
+      .theme-transition {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
       .glass-effect {
         background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
       }
+      
+      [data-theme='cyber'] .glass-effect {
+        background: rgba(15, 23, 42, 0.7);
+      }
+
+      /* Custom Utilities using Variables */
+      .bg-theme-primary { background-color: var(--primary); }
+      .bg-theme-secondary { background-color: var(--secondary); }
+      .text-theme-primary { color: var(--primary); }
+      .text-theme-secondary { color: var(--secondary); }
+      .border-theme-primary { border-color: var(--primary); }
     </style>
   <script type="importmap">
 {

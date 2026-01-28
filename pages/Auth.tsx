@@ -26,7 +26,7 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
       name: formData.name || 'Student User',
       email: formData.email,
       phoneNumber: formData.phoneNumber,
-      rollNumber: formData.rollNumber || `W-${new Date().getFullYear()}-${Math.floor(100 + Math.random() * 900)}`,
+      rollNumber: formData.rollNumber || `E-${new Date().getFullYear()}-${Math.floor(100 + Math.random() * 900)}`,
       grade: formData.grade,
       isLoggedIn: true
     };
@@ -38,12 +38,12 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
       <div className="bg-white rounded-3xl shadow-xl overflow-hidden max-w-4xl w-full grid grid-cols-1 md:grid-cols-2">
         <div className="hidden md:block relative bg-blue-600">
           <img 
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop" 
             className="absolute inset-0 w-full h-full object-cover opacity-40" 
             alt="auth"
           />
           <div className="relative z-10 h-full p-12 flex flex-col justify-center text-white">
-            <h2 className="text-4xl font-bold mb-6">Welcome to WISLY</h2>
+            <h2 className="text-4xl font-bold mb-6">Welcome to egurukl</h2>
             <p className="text-lg opacity-90 mb-8">Access your personalized learning dashboard, manage your details, and join classrooms instantly.</p>
             <div className="space-y-4">
               <div className="flex items-center space-x-3 bg-white/10 p-4 rounded-xl backdrop-blur-md">
@@ -60,8 +60,8 @@ const Auth: React.FC<AuthProps> = ({ onLogin }) => {
         
         <div className="p-8 md:p-12">
           <div className="text-center mb-10">
-            <h1 className="text-2xl font-bold text-gray-900">{isLogin ? 'Sign In' : 'Join WISLY'}</h1>
-            <p className="text-gray-500 mt-2">Empowering WISLY Private Limited Students</p>
+            <h1 className="text-2xl font-bold text-gray-900">{isLogin ? 'Sign In' : 'Join egurukl'}</h1>
+            <p className="text-gray-500 mt-2">Empowering Students of MTST SEVA Technologies Pvt. Ltd.</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">

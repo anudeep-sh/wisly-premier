@@ -25,7 +25,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
           </div>
           <div>
             <h1 className="text-3xl font-bold text-gray-900">Hello, {user.name}!</h1>
-            <p className="text-gray-500 font-medium">{user.grade} • Roll No: {user.rollNumber}</p>
+            <p className="text-gray-500 font-medium uppercase">{user.grade} • Roll No: {user.rollNumber}</p>
           </div>
         </div>
         <div className="mt-6 md:mt-0 flex space-x-3">
@@ -84,7 +84,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
 
         <div className="space-y-8">
           <div className="bg-blue-600 p-8 rounded-3xl text-white">
-            <h3 className="text-lg font-bold mb-4">WISLY AI Tutor</h3>
+            <h3 className="text-lg font-bold mb-4 uppercase">egurukl AI Tutor</h3>
             <p className="text-blue-100 text-sm mb-6 leading-relaxed">
               Need help with your homework? Our AI-powered tutor is available 24/7 to answer your academic queries.
             </p>

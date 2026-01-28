@@ -58,7 +58,7 @@ const BusFacilities: React.FC = () => {
           </div>
         </div>
         <div className="lg:w-1/2">
-          <img src="https://picsum.photos/seed/schoolbus/800/500" className="rounded-3xl shadow-2xl" alt="School Bus" />
+          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069&auto=format&fit=crop" className="rounded-3xl shadow-2xl" alt="School Bus" />
         </div>
       </div>
 

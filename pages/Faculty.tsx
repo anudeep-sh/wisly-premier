@@ -9,15 +9,15 @@ const Faculty: React.FC = () => {
       background: "Ex-Professor, IIT Delhi",
       specialization: "Advanced Physics & Quantum Mechanics",
       bio: "With over 25 years of experience in research and teaching, Prof. Varma leads our Science department with a focus on conceptual clarity.",
-      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=600&h=600",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=600&fit=crop",
       achievements: "Author of 12 Physics Journals"
     },
     {
       name: "Dr. Meenakshi Iyer",
       background: "Ph.D, IISc Bangalore",
       specialization: "Molecular Biology & Genetics",
-      bio: "Dr. Iyer brings her passion for life sciences to WISLY, encouraging students to explore the natural world through innovative labs.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=600",
+      bio: "Dr. Iyer brings her passion for life sciences to egurukl, encouraging students to explore the natural world through innovative labs.",
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=600&fit=crop",
       achievements: "National Science Award Winner"
     },
     {
@@ -25,7 +25,7 @@ const Faculty: React.FC = () => {
       background: "M.Tech, IIT Bombay",
       specialization: "Mathematics & Analytical Logic",
       bio: "Prof. Khanna simplifies complex theorems using his unique 'Logic-First' approach, making math accessible to everyone.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600&h=600",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=600&fit=crop",
       achievements: "Math Olympiad Mentor"
     },
     {
@@ -33,7 +33,7 @@ const Faculty: React.FC = () => {
       background: "Ex-Faculty, JNU",
       specialization: "History & Cultural Heritage",
       bio: "A specialist in Indian history, Dr. Deshmukh helps students connect with their roots while understanding global shifts.",
-      image: "https://images.unsplash.com/photo-1594744803329-e58b31de5984?auto=format&fit=crop&q=80&w=600&h=600",
+      image: "https://images.unsplash.com/photo-1594744803329-e58b31de5984?w=600&h=600&fit=crop",
       achievements: "UNESCO Heritage Contributor"
     }
   ];
@@ -48,7 +48,7 @@ const Faculty: React.FC = () => {
           </div>
           <h1 className="text-5xl md:text-7xl font-black text-gray-900 mb-8 leading-tight">Meet your <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">Mentors.</span></h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto font-medium leading-relaxed">
-            At WISLY, we handpick distinguished academic minds from India's premier institutes like IITs, IIMs, and NITs to guide our students.
+            At egurukl, we handpick distinguished academic minds from India's premier institutes like IITs, IIMs, and NITs to guide our students.
           </p>
         </div>
 
@@ -108,9 +108,9 @@ const Faculty: React.FC = () => {
         <div className="mt-40 bg-gray-900 rounded-[4rem] p-12 md:p-24 text-center relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-600/20 to-transparent"></div>
           <div className="relative z-10 max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-8">Expert advice for every student.</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-8 uppercase">Advice for every student.</h2>
             <p className="text-xl text-gray-400 mb-12 font-medium leading-relaxed">
-              Unlock your potential with personal mentorship from India's most brilliant academic minds.
+              Unlock your potential with personal mentorship from egurukl's brilliant academic minds.
             </p>
             <button className="px-12 py-6 bg-white text-gray-900 rounded-[2.5rem] font-black text-xl hover:bg-blue-600 hover:text-white transition-all shadow-2xl active:scale-95 flex items-center mx-auto group">
               Schedule Mentorship

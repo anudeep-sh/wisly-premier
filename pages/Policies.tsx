@@ -44,9 +44,9 @@ const Policies: React.FC = () => {
             <Gavel className="w-4 h-4 mr-2" />
             Legal & Compliance
           </div>
-          <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight">WISLY Trust <span className="text-blue-600">Center.</span></h1>
+          <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight">egurukl Trust <span className="text-blue-600">Center.</span></h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto font-medium leading-relaxed">
-            Our commitment to transparency, safety, and excellence is governed by these official guidelines and legal frameworks.
+            Our commitment to transparency, safety, and excellence is governed by these official guidelines. All rights reserved by MTST SEVA Technologies Pvt. Ltd.
           </p>
         </div>
         
@@ -81,14 +81,14 @@ const Policies: React.FC = () => {
                 <h2 className="text-3xl font-black text-gray-900">Digital Guardian Policy</h2>
               </div>
               <p className="text-gray-500 leading-relaxed text-lg mb-8 font-medium">
-                WISLY employs a comprehensive "Digital Guardian" framework to ensure the online safety of all students within our network.
+                MTST SEVA Technologies Pvt. Ltd. employs a comprehensive "Digital Guardian" framework to ensure the online safety of all students within our network.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
                   { title: "Network Monitoring", desc: "Real-time AI-driven monitoring of on-campus internet traffic to block harmful content." },
                   { title: "Data Protection", desc: "Strict adherence to the Digital Personal Data Protection (DPDP) Act, 2023." },
-                  { title: "Whistleblower App", desc: "Anonymous reporting channel for cyberbullying or online harassment." },
-                  { title: "Device Security", desc: "Mandatory antivirus and firewall protocols for all school-issued hardware." }
+                  { title: "Whistleblower Channel", desc: "Anonymous reporting channel for any safety concerns." },
+                  { title: "Device Security", desc: "Mandatory antivirus and firewall protocols for all hardware." }
                 ].map((item, i) => (
                   <div key={i} className="p-6 bg-slate-50 rounded-3xl border border-gray-100 hover:border-blue-200 transition-colors">
                     <h4 className="font-black text-gray-900 mb-2">{item.title}</h4>
@@ -109,12 +109,12 @@ const Policies: React.FC = () => {
                 <h2 className="text-3xl font-black text-gray-900">Anti-Bullying & Ragging</h2>
               </div>
               <div className="prose prose-lg prose-slate max-w-none text-gray-500 font-medium leading-relaxed mb-10">
-                Ragging is a criminal offense as per the Honorable Supreme Court of India guidelines. WISLY maintains a Zero-Tolerance policy.
+                Ragging is a criminal offense as per the guidelines. MTST SEVA Technologies Pvt. Ltd. maintains a Zero-Tolerance policy.
               </div>
               <div className="bg-red-50 p-8 rounded-[2.5rem] border border-red-100 flex items-start space-x-6">
                 <AlertTriangle className="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
                 <p className="text-red-900 font-bold leading-relaxed">
-                  "Any student found guilty of bullying, ragging, or physical harassment will be subject to immediate suspension, expulsion, and if necessary, legal prosecution by Hyderabad police authorities."
+                  "Any student found guilty of bullying, ragging, or physical harassment at any facility owned by MTST SEVA Technologies Pvt. Ltd. will be subject to immediate suspension, expulsion, and if necessary, legal prosecution."
                 </p>
               </div>
             </div>
@@ -129,24 +129,25 @@ const Policies: React.FC = () => {
               </div>
               <h2 className="text-3xl font-black text-gray-900">Privacy & Data Governance</h2>
             </div>
-            <div className="space-y-12">
+            <div className="space-y-12 text-gray-500 font-medium">
+              <p>Privacy Policy of <strong>MTST SEVA Technologies Pvt. Ltd.</strong>. All rights reserved.</p>
               <section className="relative pl-12">
                 <div className="absolute left-0 top-0 w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center font-black">1</div>
                 <h3 className="text-xl font-black text-gray-900 mb-4">Nature of Data Collection</h3>
-                <p className="text-gray-500 font-medium leading-relaxed">NEOFIN NEX India Private Limited collect student demographic data, academic performance metrics, attendance logs, and guardian contact details for the sole purpose of educational administration.</p>
+                <p>We collect student demographic data, academic performance metrics, and guardian contact details for administration.</p>
               </section>
               <section className="relative pl-12">
                 <div className="absolute left-0 top-0 w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center font-black">2</div>
                 <h3 className="text-xl font-black text-gray-900 mb-4">Data Sovereignty</h3>
-                <p className="text-gray-500 font-medium leading-relaxed">In compliance with Indian data localization laws, all sensitive student data is stored on secure servers located within the territory of India.</p>
+                <p>In compliance with laws, all sensitive data managed by MTST SEVA Technologies Pvt. Ltd. is stored on secure servers within India.</p>
               </section>
               <section className="relative pl-12">
                 <div className="absolute left-0 top-0 w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center font-black">3</div>
                 <h3 className="text-xl font-black text-gray-900 mb-4">Encryption Standards</h3>
-                <p className="text-gray-500 font-medium leading-relaxed">All database transactions and cloud uploads are protected using AES-256 bit encryption and multi-factor authentication for administrative access.</p>
+                <p>All database transactions are protected using AES-256 bit encryption.</p>
               </section>
               <div className="p-8 bg-slate-50 rounded-[2.5rem] border border-gray-100 italic text-gray-400 font-medium text-sm">
-                * Our privacy practices are reviewed annually by independent security auditors to ensure 100% compliance with evolving digital laws in India.
+                * Our privacy practices are reviewed annually to ensure compliance with digital laws in India.
               </div>
             </div>
           </div>
@@ -161,20 +162,21 @@ const Policies: React.FC = () => {
               <h2 className="text-3xl font-black text-gray-900">Fee Refund & Cancellation</h2>
             </div>
             <div className="space-y-10">
+              <p>Refund Policy of <strong>MTST SEVA Technologies Pvt. Ltd.</strong>. All rights reserved.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="p-8 bg-blue-50 rounded-[2.5rem] border border-blue-100">
                   <div className="bg-white w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-sm">
                     <CreditCard className="w-6 h-6 text-blue-600" />
                   </div>
                   <h4 className="text-xl font-black text-blue-900 mb-4">Duplicate Payments</h4>
-                  <p className="text-blue-700 font-medium">Any technical errors resulting in double deduction of fees will be auto-processed for refund within 7-10 working days upon verification.</p>
+                  <p className="text-blue-700 font-medium">Technical errors resulting in double deduction of fees by MTST SEVA Technologies Pvt. Ltd. will be auto-processed for refund within 7-10 working days.</p>
                 </div>
                 <div className="p-8 bg-orange-50 rounded-[2.5rem] border border-orange-100">
                   <div className="bg-white w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shadow-sm">
                     <FileText className="w-6 h-6 text-orange-600" />
                   </div>
                   <h4 className="text-xl font-black text-orange-900 mb-4">Admission Withdrawal</h4>
-                  <p className="text-orange-700 font-medium">Refund requests for admission withdrawal must be submitted in writing. Note that registration fees are strictly non-refundable.</p>
+                  <p className="text-orange-700 font-medium">Refund requests for withdrawal must be submitted in writing to our Warangal office. Registration fees are non-refundable.</p>
                 </div>
               </div>
               
@@ -185,7 +187,7 @@ const Policies: React.FC = () => {
                     "Before start of academic session: 90% of tuition fee refundable.",
                     "Within 30 days of session start: 50% of tuition fee refundable.",
                     "After 30 days of session start: No refunds applicable.",
-                    "Transport and Lab fees are non-refundable once the service is activated."
+                    "Transport and other utility fees are non-refundable once activated."
                   ].map((line, idx) => (
                     <li key={idx} className="flex items-center space-x-4 text-gray-500 font-bold">
                       <div className="w-2 h-2 rounded-full bg-blue-500"></div>
@@ -206,22 +208,23 @@ const Policies: React.FC = () => {
               </div>
               <h2 className="text-3xl font-black text-gray-900">Terms of Enrollment</h2>
             </div>
-            <div className="space-y-8 prose prose-lg prose-slate max-w-none text-gray-500 font-medium leading-relaxed">
+            <div className="space-y-8 text-gray-500 font-medium leading-relaxed">
+              <p>Terms and Conditions of <strong>MTST SEVA Technologies Pvt. Ltd.</strong>. All rights reserved.</p>
               <section>
                 <h3 className="text-xl font-black text-gray-900 mb-4">1. Academic Obligations</h3>
-                <p>By enrolling at NEOFIN NEX India Private Limited, students agree to maintain a minimum of 75% attendance and adhere to the academic code of conduct. Failure to do so may result in debarment from terminal examinations.</p>
+                <p>By enrolling at egurukl, students agree to maintain 75% attendance. All rights reserved by the management to debar students with lower attendance.</p>
               </section>
               <section>
                 <h3 className="text-xl font-black text-gray-900 mb-4">2. Intellectual Property</h3>
-                <p>All learning materials, software interfaces, and curriculum designs provided by WISLY are the exclusive intellectual property of the institution. Unauthorized redistribution is strictly prohibited.</p>
+                <p>All materials provided are the exclusive property of MTST SEVA Technologies Pvt. Ltd. All rights reserved. Unauthorized redistribution is prohibited.</p>
               </section>
               <section>
-                <h3 className="text-xl font-black text-gray-900 mb-4">3. Jurisdictional Courts</h3>
-                <p>All legal disputes or matters of litigation shall be subject to the exclusive jurisdiction of the competent courts located in Hyderabad, Telangana, India.</p>
+                <h3 className="text-xl font-black text-gray-900 mb-4">3. Registered Details</h3>
+                <p>Registered Address: 11-9-15, A J MILLS, OCITY, Shivnagar, Warangal – 506002, Telangana. All legal matters shall be subject to the exclusive jurisdiction of the competent courts in Warangal.</p>
               </section>
               <section>
                 <h3 className="text-xl font-black text-gray-900 mb-4">4. Code of Discipline</h3>
-                <p>WISLY reserves the right to terminate enrollment for habitual indiscipline, damage to campus property, or behavior that compromises the institutional reputation.</p>
+                <p>MTST SEVA Technologies Pvt. Ltd. reserves the right to terminate enrollment for habitual indiscipline or behavior compromising institutional reputation.</p>
               </section>
             </div>
           </div>
@@ -232,17 +235,17 @@ const Policies: React.FC = () => {
           <AlertTriangle className="w-16 h-16 text-orange-400 mx-auto mb-8 animate-pulse" />
           <h3 className="text-4xl font-black mb-6 tracking-tight">Need Legal Clarification?</h3>
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-            Our administrative and legal compliance team is available to discuss any questions regarding our institutional policies.
+            Our legal compliance team at MTST SEVA Technologies Pvt. Ltd. is available to discuss any questions.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <a 
-              href="mailto:support@thequickpayme.com" 
+              href="mailto:support@mtstsevakendra.in" 
               className="px-12 py-5 bg-white text-gray-900 rounded-[2rem] font-black text-xl hover:bg-blue-600 hover:text-white transition-all shadow-2xl active:scale-95 flex items-center justify-center"
             >
               Contact Legal Desk
             </a>
             <button className="px-12 py-5 bg-gray-800 text-gray-400 rounded-[2rem] font-black text-xl hover:bg-gray-700 transition-all active:scale-95">
-              Download Full PDF
+              Download PDF
             </button>
           </div>
         </div>
