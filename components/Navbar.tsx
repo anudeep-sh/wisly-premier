@@ -1,9 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, BookOpen, LayoutDashboard, Bus, CreditCard, Gamepad2, ShieldAlert, GraduationCap, Sparkles } from 'lucide-react';
+import { Menu, X, BookOpen, LayoutDashboard, Bus, CreditCard, Gamepad2, ShieldAlert, GraduationCap, Sparkles, UserCircle } from 'lucide-react';
+import { User } from '../types';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  user?: User | null;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ user }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -57,12 +62,19 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <Link
-              to="/classrooms"
-              className="bg-gray-900 text-white px-8 py-3 rounded-2xl text-sm font-bold hover:bg-blue-600 transition-all shadow-xl shadow-gray-200 active:scale-95"
-            >
-              Get Started
-            </Link>
+            {user ? (
+              <Link to="/profile" className="flex items-center space-x-2 bg-gray-50 border border-gray-100 px-4 py-2 rounded-2xl hover:bg-white transition-all">
+                <UserCircle className="w-5 h-5 text-blue-600" />
+                <span className="text-sm font-bold text-gray-700">{user.name.split(' ')[0]}</span>
+              </Link>
+            ) : (
+              <Link
+                to="/auth"
+                className="bg-gray-900 text-white px-8 py-3 rounded-2xl text-sm font-bold hover:bg-blue-600 transition-all shadow-xl shadow-gray-200 active:scale-95"
+              >
+                Login
+              </Link>
+            )}
           </div>
 
           <div className="flex items-center lg:hidden">
@@ -100,7 +112,7 @@ const Navbar: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="w-full bg-blue-600 text-white px-8 py-5 rounded-3xl text-center font-bold text-lg block shadow-2xl shadow-blue-100"
             >
-              Explore Now
+              Get Started
             </Link>
           </div>
         </div>

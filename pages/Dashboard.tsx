@@ -59,9 +59,9 @@ const Dashboard: React.FC<DashboardProps> = ({ user }) => {
             </h2>
             <div className="space-y-4">
               {[
-                { subject: 'Advanced Mathematics', teacher: 'Dr. Sarah Wilson', time: '09:00 AM - 10:30 AM' },
-                { subject: 'Computer Science', teacher: 'Prof. James Chen', time: '11:00 AM - 12:30 PM' },
-                { subject: 'Physics Lab', teacher: 'Dr. Robert Blake', time: '01:30 PM - 03:00 PM' },
+                { subject: 'Advanced Mathematics', teacher: 'Dr. Shanti Swaroop', time: '09:00 AM - 10:30 AM' },
+                { subject: 'Computer Science', teacher: 'Prof. Vinod Bansal', time: '11:00 AM - 12:30 PM' },
+                { subject: 'Physics Lab', teacher: 'Dr. Ajay Deshmukh', time: '01:30 PM - 03:00 PM' },
               ].map((cls, i) => (
                 <div key={i} className="flex items-center justify-between p-4 rounded-xl border border-gray-50 hover:bg-slate-50 transition-colors">
                   <div className="flex items-center space-x-4">
