@@ -31,21 +31,22 @@ export interface FeeStructure {
   total: number;
 }
 
-export interface User {
-  id: string;
-  name: string;
-  email: string;
-  phoneNumber?: string;
-  address?: string;
-  rollNumber?: string;
-  grade?: string;
-  isLoggedIn: boolean;
-}
-
 export interface SafetyReport {
   id: string;
   type: 'bullying' | 'infrastructure' | 'cyber' | 'transport' | 'other';
   description: string;
   date: string;
   status: 'pending' | 'resolved';
+}
+
+// Added User interface to resolve module export errors in Auth, Dashboard, and Profile pages
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  phoneNumber: string;
+  rollNumber: string;
+  grade: string;
+  isLoggedIn: boolean;
+  address?: string;
 }

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Classroom } from '../types';
-import { BookOpen, Users, User, Star, CheckCircle2, Layout, Smartphone, Globe, ShieldCheck, X, FileText, Download } from 'lucide-react';
+import { BookOpen, Users, User, Star, CheckCircle2, Layout, Smartphone, Globe, ShieldCheck, X, FileText, Download, CheckCircle } from 'lucide-react';
 
 interface ExtendedClassroom extends Classroom {
   subjectDetails: {
@@ -73,11 +73,11 @@ const Classrooms: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24">
           <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-2xl text-sm font-black uppercase tracking-widest mb-6">
-            NeoFin Nex Academic Core
+            WISLY Academic Core
           </div>
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-8 uppercase tracking-tight">Curriculum <span className="text-blue-600">Roadmap.</span></h1>
           <p className="text-xl text-gray-500 max-w-3xl mx-auto font-medium">
-            Standardized curriculum modules delivered by our distinguished faculty at NeoFin Nex.
+            Standardized curriculum modules delivered by our distinguished faculty at WISLY.
           </p>
         </div>
 
@@ -126,6 +126,73 @@ const Classrooms: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* Curriculum Modal */}
+      {selectedClass && (
+        <div className="fixed inset-0 z-[100] bg-gray-950/80 backdrop-blur-lg flex items-center justify-center p-4">
+          <div className="bg-white w-full max-w-4xl max-h-[90vh] rounded-[3.5rem] overflow-hidden flex flex-col shadow-2xl relative animate-in fade-in zoom-in duration-300">
+            <button 
+              onClick={() => setSelectedClass(null)}
+              className="absolute top-8 right-8 p-3 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors z-10"
+            >
+              <X className="w-6 h-6 text-gray-600" />
+            </button>
+            
+            <div className={`p-12 bg-gradient-to-r ${selectedClass.subjectDetails.gradient} text-white`}>
+              <h2 className="text-4xl font-black uppercase tracking-tight mb-2">{selectedClass.teacher.subject}</h2>
+              <p className="text-white/70 font-bold uppercase tracking-widest text-sm">Detailed Academic Roadmap • {selectedClass.grade}</p>
+            </div>
+            
+            <div className="flex-1 overflow-y-auto p-12 space-y-12">
+              <section>
+                <h3 className="text-xl font-black text-gray-900 uppercase mb-6 flex items-center">
+                  <BookOpen className="w-6 h-6 mr-3 text-blue-600" />
+                  Key Learning Topics
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {selectedClass.subjectDetails.topics.map((topic, i) => (
+                    <div key={i} className="flex items-center p-4 bg-slate-50 rounded-2xl border border-gray-100 font-bold text-gray-700">
+                      <CheckCircle2 className="w-5 h-5 mr-3 text-green-500" />
+                      {topic}
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              <section>
+                <h3 className="text-xl font-black text-gray-900 uppercase mb-6 flex items-center">
+                  <Layout className="w-6 h-6 mr-3 text-blue-600" />
+                  Semester Syllabus
+                </h3>
+                <div className="space-y-6">
+                  {selectedClass.subjectDetails.syllabus.map((term, i) => (
+                    <div key={i} className="bg-gray-50 rounded-3xl p-8 border border-gray-100">
+                      <h4 className="text-lg font-black text-blue-600 uppercase mb-4">{term.term}</h4>
+                      <ul className="space-y-3">
+                        {term.contents.map((item, idx) => (
+                          <li key={idx} className="flex items-start text-gray-500 font-medium">
+                            <span className="w-2 h-2 bg-blue-300 rounded-full mt-2 mr-3 shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </div>
+            
+            <div className="p-8 border-t border-gray-100 bg-slate-50 flex justify-end">
+              <button 
+                onClick={() => setSelectedClass(null)}
+                className="px-10 py-4 bg-gray-900 text-white rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-blue-600 transition-all shadow-lg"
+              >
+                Close Roadmap
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

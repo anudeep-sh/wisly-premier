@@ -1,7 +1,7 @@
 
 {
   "name": "WISLY - Premier Education Academy",
-  "description": "The official educational platform for WISLY Academy, featuring student management, fee payments, and interactive learning.",
+  "description": "The official informational portal for WISLY Academy, featuring academic curriculum details, fee structures, faculty profiles, and safety protocols.",
   "requestFramePermissions": [
     "camera",
     "microphone"
